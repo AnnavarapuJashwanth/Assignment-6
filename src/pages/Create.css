@@ -1,0 +1,30 @@
+.create-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.create-container .post-upload {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+/* Create.css */
+.create-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #121212;
+}
+
+.create-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

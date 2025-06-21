@@ -1,0 +1,99 @@
+/* More.css */
+.more-popup-container {
+  position: fixed;
+  bottom: 70px;
+  left: 20px;
+  z-index: 1000;
+  width: 250px;
+}
+
+.more-popup {
+  background-color: #262626;
+  border-radius: 12px;
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.popup-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  color: white;
+  gap: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.popup-item:hover {
+  background-color: #333;
+}
+
+.logout {
+  margin-top: 5px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+.logout:hover {
+  background-color: #c62828;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+  margin-left: auto;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: .4s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider::before {
+  transform: translateX(16px);
+}
+.switch-label {
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+  user-select: none;
+}
+.switch-appearance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}

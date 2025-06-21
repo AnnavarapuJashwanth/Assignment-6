@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #f8f8f8;
+  color: #fff;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +46,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* Light mode */
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
 }

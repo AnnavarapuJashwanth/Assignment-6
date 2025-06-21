@@ -1,0 +1,17 @@
+.right-sidebar {
+  padding: 20px;
+  background-color: #496d45;
+}
+
+.right-sidebar h4 {
+  margin-bottom: 10px;
+}
+
+.right-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-sidebar li {
+  padding: 5px 0;
+}

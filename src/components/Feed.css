@@ -1,0 +1,17 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+  background-color: transparent; /* or black, to match overall theme */
+}
+@media (max-width: 768px) {
+  .feed {
+    margin: 10px;
+    gap: 15px;
+  }
+
+  .post {
+    max-width: 100%;
+  }
+}

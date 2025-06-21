@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.profile-header {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Vertically align items in the flex container */
+    justify-content: center; /* Center the entire header horizontally */
+    margin-bottom: 30px;
+    gap: 30px; /* Space between profile pic and info */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.profile-pic {
+    text-align: center; /* Center content within profile-pic if needed, though flex parent will align it */
+}
+
+.profile-pic img {
+    /* REMOVE position: absolute; left: 1200px; */
+    width: 150px; /* Adjust size for side-by-side display */
+    height: 150px; /* Keep aspect ratio */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 10px; /* Add margin back for spacing below image if file input is below it */
+}
+
+/* For the file input (Choose File) */
+.profile-pic input[type="file"] {
+    /* REMOVE display: none; to make it visible */
+    display: block; /* Ensure it takes its own line */
+    margin: 10px auto; /* Center it below the image */
+    color: #bbb; /* Style text color */
+    width: fit-content; /* Ensure the input doesn't stretch unnecessarily */
+}
+
+/* Remove .custom-file-upload if you're not using it to hide the native input */
+/* .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: white; // Changed from #333, but original image shows dark background
+    color: black; // Changed from white, to make text visible on white background
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.custom-file-upload:hover {
+    background-color: #555;
+} */
+
+
+.upload-btn {
+    display: block; /* Ensure it takes its own line */
+    margin: 8px auto 0 auto; /* Center the button */
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    width: fit-content; /* Adjust width to content */
+}
+
+.upload-btn:hover {
+    background-color: #1565c0;
+}
+
+.profile-info {
+    /* REMOVE position: absolute; left: 900px; top: 70px; */
+    display: flex;
+    position:absolute;
+    left: 900px; /* Adjusted to align with profile pic */
+    top: 70px; /* Adjusted to position below profile pic */
+    flex-direction: column; /* Stack name, email, and stats vertically */
+    align-items: flex-start; /* Align text to the left within this column */
+    min-width: 200px;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-info p {
+    color: #bbb;
+    margin: 5px 0 10px;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    justify-content: flex-start; /* Align stats to the left */
+}
+
+.profile-stats span {
+    font-size: 14px;
+}
+
+.divider {
+    position:absolute;
+    left:350px;
+    top:350px;
+    margin: 30px auto; /* Center the divider */
+    border-color: #333;
+    width: 70%; /* Adjust width of divider */
+}
+
+.profile-posts {
+    position:absolute;
+    left: 500px; /* Adjusted to align with profile info */
+    top: 400px; /* Adjusted to position below profile info */
+    text-align: center; /* Center the "No posts yet." text */
+    margin-top: 20px; /* Add some space above */
+    
+}
+
+.profile-posts p {
+    margin-bottom: 15px; /* Space between "No posts yet." and file input */
+}
+
+/* The .file-upload-section styles were likely intended for the choose file/upload for posts,
+   but in your React code, they are currently tied to the profile image upload.
+   If you want a separate section for post uploads later, you'll apply these to that specific div. */
+.file-upload-section {
+    display: flex;
+    flex-direction: column; /* Stack "Choose File" and "Upload" vertically */
+    align-items: center; /* Center them horizontally */
+    margin-top: 20px;
+}
+
+.file-upload-section input[type="file"] {
+    margin-bottom: 10px; /* Space between file input and upload button */
+}

@@ -1,0 +1,43 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Light mode */
+body {
+  background-color: #fff;
+  color: #f7f0f0;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #f1eaea;
+  color: #fff;
+}
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
+  flex: 1;
+  padding: 20px;
+}
+
+.right {
+  width: 300px;
+  padding: 20px;
+}
+
+/* Optional popup styling */
+.post-upload-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
